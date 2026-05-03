@@ -26,6 +26,14 @@ namespace Dsw2026Ej8
             return $"[{productCode}]-{productDescription}-0";
         }
 
+        public string CompararCopias(int originalValue, Product product)
+        {
+            int copia = originalValue;
+            copia++;
+            var copia2 = product;
+            copia2.ModificarDescripcion("Probando");
+            return $"{originalValue}-{copia}-{product.GetDescripcion()}";
 
+        }
     }
 }
