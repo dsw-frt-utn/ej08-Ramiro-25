@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EJ8;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -65,6 +66,13 @@ namespace Dsw2026Ej8
                 return 0;
             }
 
+
+        }
+
+        public decimal ObtenerImporteFinal(Sale sale)
+        {
+
+            return sale.CalculateTotal();
 
         }
     }
